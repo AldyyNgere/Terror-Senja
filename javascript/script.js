@@ -30,7 +30,7 @@ function displayBooks(books) {
     let card = document.createElement("div");
     card.className = "shadow-lg";
     card.innerHTML = `<div
-    class="bg-[url(${img})] bg-center bg-cover relative rounded-md cursor-pointer overflow-hidden h-[300px] max-sm:h-[320px] max-sm:w-[220px] w-[200px]"
+    class="card bg-[url(${img})] bg-center bg-cover relative rounded-md cursor-pointer overflow-hidden h-[300px] max-sm:h-[320px] max-[431px]:h-[380px] max-sm:w-[220px] max-[431px]:w-[280px] w-[200px]"
   >
     <button
       class="bg-red-600 absolute top-0 right-0 py-2 px-4 text-xl rounded-bl-lg text-slate-50 hover:bg-red-700 duration-300"
