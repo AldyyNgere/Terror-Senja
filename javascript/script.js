@@ -30,13 +30,14 @@ function displayBooks(books) {
     let card = document.createElement("div");
     card.className = "shadow-lg";
     card.innerHTML = `<div
-    class="bg-[url(${img})] bg-center bg-cover relative rounded-md cursor-pointer overflow-hidden z-[-2] h-[250px] w-[180px]"
+    class="bg-[url(${img})] bg-center bg-cover relative rounded-md cursor-pointer overflow-hidden h-[300px] max-sm:h-[320px] max-sm:w-[220px] w-[200px]"
   >
     <button
       class="bg-red-600 absolute top-0 right-0 py-2 px-4 text-xl rounded-bl-lg text-slate-50 hover:bg-red-700 duration-300"
     >
       <ion-icon name="book-outline"></ion-icon>
     </button>
+    <p class="absolute bg-red-600 text-slate-50 bottom-0 w-full h-[15%] text-center pt-3">${judul}</p>
   </div>`;
     booksContainer.appendChild(card);
   });
