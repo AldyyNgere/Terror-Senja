@@ -26,7 +26,7 @@ function displayBooks(books) {
   const dataBooks = books.cerita_horor;
   dataBooks.forEach((book) => {
     const booksContainer = document.querySelector(".book-container");
-    const {id, judul, deskripsi, img} = book;
+    const {id, penulis, judul, deskripsi, img} = book;
     let card = document.createElement("div");
     card.className = "shadow-lg";
     card.innerHTML = `<div
@@ -34,6 +34,7 @@ function displayBooks(books) {
   >
     <button
       class="bg-red-600 absolute top-0 right-0 py-2 px-4 text-xl rounded-bl-lg text-slate-50 hover:bg-red-700 duration-300"
+      onclick="window.location.href='story.html?id=' + ${id};"
     >
       <ion-icon name="book-outline"></ion-icon>
     </button>
