@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/loaderHandle.css" />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
@@ -148,23 +149,42 @@
             About <span class="text-red-600">Me</span>👋
           </h2>
           <p class="w-[90%] leading-relaxed">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
-            accusantium. Aut quod harum, facilis ratione recusandae aliquam
-            natus ipsum dolore? Laboriosam recusandae vero mollitia deleniti
-            beatae odit nemo soluta dicta! Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Quisquam laboriosam fuga perferendis,
-            at libero quidem itaque nisi ex facilis consequatur corporis harum
-            quos ratione repudiandae porro cumque distinctio. Expedita, ea!
+            Hai, perkenalkan nama saya Aldy. Di dunia profesional, saya dikenal
+            sebagai seorang Frontend Developer. Saya memiliki kemampuan untuk
+            merancang dan membangun antarmuka pengguna yang menarik dan
+            interaktif, memastikan pengalaman pengguna yang optimal. Keahlian
+            saya meliputi HTML, CSS, JavaScript, dan berbagai framework frontend
+            populer seperti React dan Tailwind.<br />
+            Di luar dunia kerja, saya juga aktif sebagai mahasiswa di program
+            studi Bisnis Digital. Bidang ini membuka wawasan saya tentang
+            strategi bisnis di era digital, termasuk pemasaran online, analisis
+            data, dan e-commerce. Saya antusias untuk menggabungkan pengetahuan
+            teknis saya dengan pemahaman bisnis digital untuk menciptakan solusi
+            inovatif dan berdampak.
           </p>
         </div>
       </div>
     </section>
     <!-- ABOUT SECTION END   -->
+
+    <!-- LOADER CONTAINER START  -->
+    <div
+      class="loader z-20 flex items-center justify-center fixed top-0 left-0 h-full w-full transition duration-500 ease-in-out bg-red-600 opacity-80"
+    >
+      <l-bouncy size="100" speed="1.75" color="#fff"></l-bouncy>
+    </div>
+    <!-- LOADER CONTAINER START  END -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="javascript/tailwind.js"></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/bouncy.js"
+    ></script>
+
     <script src="javascript/script.js"></script>
+    <script src="javascript/loaderHandle.js"></script>
   </body>
 </html>

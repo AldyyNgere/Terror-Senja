@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Quattrocento:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/loaderHandle.css" />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
     <script
       type="module"
@@ -56,7 +57,21 @@
     <!-- STORY SECTION  END -->
 
     <!-- TERROR STORY START  END -->
+
+    <!-- LOADER CONTAINER START  -->
+    <div
+      class="loader z-20 flex items-center justify-center fixed top-0 left-0 h-full w-full transition duration-500 ease-in-out bg-red-600 opacity-80"
+    >
+      <l-bouncy size="100" speed="1.75" color="#fff"></l-bouncy>
+    </div>
+    <!-- LOADER CONTAINER START  END -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/ldrs/dist/auto/bouncy.js"
+    ></script>
+
     <script src="javascript/tailwind.js"></script>
+    <script src="javascript/loaderHandle.js"></script>
     <script src="javascript/story.js"></script>
   </body>
 </html>
