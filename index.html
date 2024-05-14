@@ -17,6 +17,7 @@
       rel="stylesheet"
     />
     <!-- <link rel="stylesheet" href="css/style.css" /> -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script
       type="module"
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
@@ -26,10 +27,10 @@
       src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
     ></script>
   </head>
-  <body class="font-[Quattrocento] text-slate-50 mb-[500px] bg-stone-200">
+  <body class="font-[Quattrocento] text-slate-50 mb-[100px] bg-stone-200">
     <!-- NAVIGATION  START -->
     <nav
-      class="bg-stone-950 flex items-center justify-between md:px-8 max-sm:px-5 py-5 sticky top-0 z-10 opacity-95"
+      class="bg-stone-950 flex items-center justify-between px-8 max-sm:px-5 py-5 sticky top-0 z-10 opacity-95"
     >
       <!-- LOGO  -->
       <div>
@@ -59,7 +60,7 @@
         </li>
         <li>
           <a
-            href="#"
+            href="#about"
             class="lg:hover:text-red-600 hover:opacity-80 duration-300"
             >About</a
           >
@@ -84,9 +85,9 @@
 
     <!-- HERO SECTION  START -->
     <section
-      class="hero-section bg-hero-pattern bg-center max-sm:h-[100vh] h-[50vh] flex items-center justify-center"
+      class="hero-section bg-hero-pattern bg-fixed bg-center bg-no-repeat bg-cover max-sm:h-[100vh] h-[50vh] flex items-center justify-center"
     >
-      <div class="text-center">
+      <div class="text-center" data-aos="fade-down" data-aos-duration="500">
         <h1
           class="mb-7 font-[Quattrocento] leading-tight max-md:text-4xl max-sm:text-3xl text-5xl text-slate-200 font-extrabold"
         >
@@ -104,7 +105,7 @@
     <!-- HERO SECTION  END -->
 
     <!-- TERROR STORY START  -->
-    <section id="terror-story" class="text-stone-950 p-5">
+    <section id="terror-story" class="text-stone-950 p-5 mb-10">
       <div class="container pt-20">
         <h2 class="text-3xl font-semibold max-sm:text-center">
           👻 Terror <span class="text-red-600">Story</span>
@@ -119,6 +120,43 @@
       </div>
     </section>
     <!-- TERROR STORY START  END -->
+
+    <!-- ABOUT SECTION START  -->
+    <section
+      id="about"
+      class="about-section bg-hero-pattern bg-fixed bg-center bg-no-repeat bg-cover flex justify-center items-center py-20 px-5"
+    >
+      <div
+        class="container flex max-md:flex-col flex-row content-center gap-7 max-h-[90vh] max-md:max-h-[150vh]"
+      >
+        <div class="img-box w-[100%] overflow-hidden rounded">
+          <img
+            src="img/about/img (1).png"
+            alt="Aldy Ngere"
+            class="w-full h-full max-md:w-[100%] max-md:h-[100%] grayscale"
+          />
+        </div>
+        <div class="text-box rounded bg-stone-950 opacity-95 p-5">
+          <h2 class="text-3xl font-semibold max-sm:text-center mb-3">
+            About <span class="text-red-600">Me</span>👋
+          </h2>
+          <p class="w-[90%] leading-relaxed">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat,
+            accusantium. Aut quod harum, facilis ratione recusandae aliquam
+            natus ipsum dolore? Laboriosam recusandae vero mollitia deleniti
+            beatae odit nemo soluta dicta! Lorem ipsum dolor sit amet
+            consectetur adipisicing elit. Quisquam laboriosam fuga perferendis,
+            at libero quidem itaque nisi ex facilis consequatur corporis harum
+            quos ratione repudiandae porro cumque distinctio. Expedita, ea!
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION END   -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="javascript/tailwind.js"></script>
     <script src="javascript/script.js"></script>
   </body>

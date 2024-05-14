@@ -24,7 +24,7 @@ function displayBook(book) {
   container.innerHTML = "";
   const story = document.createElement("div");
   story.innerHTML = `
-  <div class="overflow-auto max-md:w-[98%] w-[85%] bg-red-600 mx-auto py-5 px-7 rounded bg-stone-950 opacity-95">
+  <div class="overflow-auto max-md:w-[98%] w-[85%] mx-auto py-5 px-7 rounded bg-stone-950 opacity-95">
             <h1 class="max-sm:text-center mb-3 max-sm:text-4xl text-5xl text-red-600 font-semibold">${judul}</h1>
             <h3 class="max-sm:text-center text-slate-200">${penulis}</h3>
             <div class="mt-5 max-sm:flex max-sm:flex-col max-sm:items-center max-sm:justify-center">
