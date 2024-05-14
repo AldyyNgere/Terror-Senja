@@ -1,4 +1,17 @@
 .loader-hidden {
   opacity: 0;
   visibility: hidden;
+  animation: opacityZero 2s;
+}
+
+@keyframes opacityZero {
+  0% {
+    opacity: 80%;
+  }
+  50% {
+    opacity: 30%;
+  }
+  100% {
+    opacity: 0;
+  }
 }
