@@ -16,8 +16,15 @@ xhr.send();
 
 // DISPLAY BOOK
 function displayBook(book) {
-  const audio = new Audio();
-  audio.src = "audio/horror-backsound.mp3";
+  const audioFiles = [
+    "audio/horror-backsound.mp3",
+    "audio/horror-backsound (1).mp3",
+    "audio/horror-backsound (2).mp3",
+    "audio/horror-backsound (3).mp3",
+    "audio/horror-backsound (4).mp3",
+  ];
+  const randomIndex = Math.floor(Math.random() * audioFiles.length);
+  const audio = new Audio(audioFiles[randomIndex]);
   audio.play();
   const {id, judul, penulis, deskripsi, img} = book;
   const container = document.querySelector(".section-container");
