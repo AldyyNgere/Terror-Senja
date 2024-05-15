@@ -43,3 +43,26 @@ function displayBooks(books) {
     booksContainer.appendChild(card);
   });
 }
+
+// FUNCTION TO HANDLE YEAR ON FOOTER
+function handleYear() {
+  const date = new Date();
+  let year = date.getFullYear();
+  const displayYear = document.getElementById("display_year");
+  displayYear.innerText = year;
+}
+handleYear();
+
+// HANDLE MESSAGE TO WHATSAPP
+function sendMessageToWhatsapp() {
+  let name = document.forms["message-form"]["name"].value;
+  let email = document.forms["message-form"]["email"].value;
+  let message = document.forms["message-form"]["message"].value;
+
+  const urlToWhatsapp = `https://wa.me/6282237517382?text=
+  Nama : ${name} 
+  Email : ${email} 
+  Message : ${message}
+  `;
+  window.open(urlToWhatsapp, "_blank");
+}

@@ -174,7 +174,9 @@
       >
         <div class="form-container">
           <form
+            name="message-form"
             action="#"
+            onsubmit="sendMessageToWhatsapp()"
             class="flex flex-col max-sm:grid gap-2 px-10 max-lg:px-4 max-md:px-2 max-sm:px-3"
           >
             <div>
@@ -278,7 +280,8 @@
           "
         >
           <p class="pt-5">
-            &copy; <span>2016</span> Terror Senja All rights reserved
+            &copy; <span id="display_year">2016</span> Terror Senja All rights
+            reserved
           </p>
         </div>
       </div>
